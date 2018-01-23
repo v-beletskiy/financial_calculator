@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Financial estimate</title>
+    <link type="text/css" rel="stylesheet" href="reset.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>     <!--defer is used for html DOM to be loaded first and be available for js-->
+</head>
+<body>
+    <div class="wrapper">
+        <header class="top-block">
+            <p class="top-block-title">Ваш ежемесячный калькулятор</p>
+        </header>
+        <section class="calculation-fields">
+            <div class="income">
+                <div>Ваши ежемесячные поступления</div>
+                <div><input class="input-for-your-sums" id="your-monthly-income-sum" type="text"><span class="input-roubles">₽</span></div>
+            </div>
+            <div class="compulsory-payments" id="compulsory-payments-wrap">
+                <div class="compulsory-payments-header"><span>Обязательные расходы</span></div>
+                <div class="compulsory-payments-item"><span>ЖКХ</span><div><input class="input-for-your-sums" id="compulsory-payments-item-home" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Аренда жилья</span><div><input class="input-for-your-sums" id="compulsory-payments-item-rooming" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Еда</span><div><input class="input-for-your-sums" id="compulsory-payments-item-food" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Транспорт</span><div><input class="input-for-your-sums" id="compulsory-payments-item-transport" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Одежда</span><div><input class="input-for-your-sums" id="compulsory-payments-item-clothes" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Путешествия</span><div><input class="input-for-your-sums" id="compulsory-payments-item-trips" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Бытовые расходы</span><div><input class="input-for-your-sums" id="compulsory-payments-item-natural-discharge" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Крупные бытовые покупки</span><div><input class="input-for-your-sums" id="compulsory-payments-item-weighty-house-purchasing" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Медицина</span><div><input class="input-for-your-sums" id="compulsory-payments-item-medicine"><span class="input-roubles" type="text">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Развлечения</span><div><input class="input-for-your-sums" id="compulsory-payments-item-entertainment" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Отпуск</span><div><input class="input-for-your-sums" id="compulsory-payments-item-vacation" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Кредиты</span><div><input class="input-for-your-sums" id="compulsory-payments-item-credits" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item"><span>Резервный фонд (сбережения)</span><div><input class="input-for-your-sums" id="compulsory-payments-item-savings" type="text"><span class="input-roubles">₽</span></div></div>
+                <div class="compulsory-payments-item-add" id="addButton">
+                    <div class="compulsory-payments-item-add-button-wrapper">
+                        <input class="compulsory-payments-item-add-button" id="compulsory-payments-item-add" type="button" value="Добавить статью расходов">
+                    </div>
+                    <!--<div><input class="input-for-your-sums">
+                        <span class="input-roubles">Р</span>
+                    </div>-->
+                </div>
+            </div>
+
+            <!--<div id="budget-slider-block">
+                <div id="budget-slider">
+                    <div id="budget-slider-handle">
+
+                    </div>
+                </div>
+            </div>-->
+
+            <div class="daily-budget">
+                <div>Ваш дневной бюджет</div>
+                <div><span class="daily-budget-sum"></span><span class="input-roubles">Р</span></div>
+            </div>
+            <div class="total">
+                <div class="balance-conclusion">Баланс финансов</div>
+                <div class="total-line-separator"><span>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</span></div>
+                <div class="total-income">
+                    <div>Доходы</div>
+                    <div><span class="total-income-sum"></span><span class="input-roubles">Р</span></div>
+                </div>
+                <div class="total-expense">
+                    <div>Расходы</div>
+                    <div><span class="total-expense-sum"></span><span class="input-roubles">Р</span></div>
+                </div>
+                <div class="total-line-separator"><span>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</span></div>
+                <div class="total-sum">
+                    <div>Итого</div>
+                    <div><span id="estimatedTotal"></span><span class="input-roubles">Р</span></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+</body>
+</html>

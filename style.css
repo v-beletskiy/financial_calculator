@@ -1,0 +1,184 @@
+body {
+    background: url(img/bg_image.jpg);
+    background-position: top;
+    background-size: 130%;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    width: 100%;
+    background: hsla(243, 24%, 16%, 0.5);
+}
+
+.top-block {
+    background-color: rgba(43, 93, 150, 0.4);
+    width: 100%;
+    min-height: 8vh;
+}
+
+.top-block-title {
+    margin: 0 auto;
+    margin-left: 12%;
+    padding-top: 3vh;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ececef;
+}
+
+.calculation-fields {
+    margin-top: 50px;
+    margin-left: 12%;
+    margin-right: 10%;
+    width: 40%;
+    font-size: 1rem;
+    color: #e9edf3;
+}
+
+.income, .daily-budget {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.income {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*Main content block - adding parameters*/
+.compulsory-payments {
+
+}
+
+.compulsory-payments-header, .compulsory-payments-item, .compulsory-payments-item-add, .total, .total-income, .total-expense, .estimatedTotal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /*width: 100%;*/
+    align-items: center;
+}
+
+.compulsory-payments-header {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+.compulsory-payments-item, .compulsory-payments-item-add {
+    padding-left: 15px;
+}
+
+.compulsory-payments-item {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #9b9ba2;
+    position: relative;
+}
+
+.compulsory-payments-item:hover {
+    background-color: #405d846e;
+}
+
+.compulsory-payments-item-add-button-wrapper {
+    margin: 0 auto;
+}
+
+.compulsory-payments-item-add-button {
+    border: 1px solid #3b6ebb;
+    border-radius: .5rem;
+    padding: 12px 22px;
+    color: #fff;
+    background: #4470b3;
+    transition: all 0.7s;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.compulsory-payments-item-add-button:hover {
+    color: #000000;
+    background-color: #fff;
+}
+
+.input-roubles {
+    margin-left: 5px;
+    text-transform: none;
+}
+
+.input-for-your-sums {
+    color: white;
+    background-color: transparent;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    transition: all 0.7s;
+    /*margin-left: 10px;*/
+}
+
+.input-for-your-sums:focus {
+}
+
+#budget-slider-block {
+    margin-top: 50px;
+}
+
+#budget-slider {
+    width: 100%;
+    margin: 20px 0;
+    height: 2px;
+    background-color: #a1bb57;
+    position: relative;
+}
+
+#budget-slider-handle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #cabd9b;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    /*left is assigned -10px on account of the circle center to coincide with the beginning of budget-slider div */
+    left: calc(0% - 10px);
+}
+
+.daily-budget {
+    margin-top: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.daily-budget-sum {
+    margin-left: 10px;
+}
+
+.total {
+    margin-top: 40px;
+    /*background: #fceddb;*/
+}
+
+.balance-conclusion {
+    margin: 0 auto;
+}
+
+.total-line-separator {
+    overflow: hidden;
+}
+
+.help-hover, .help-hover-added-fields {
+    position: absolute;
+    bottom: 80%;
+    left: 25%;
+    max-width: 30%;
+    color: white;
+    background-color: #7691da;;
+    padding: 7px 7px;
+    box-shadow: rgb(151, 171, 195) 2px 2px;
+    border-radius: 5px;
+}
+
+.help-hover-added-fields {
+    max-width: 40%;
+}
